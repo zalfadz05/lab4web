@@ -107,4 +107,83 @@ Kita akan membuat layout web sederhana seperti gambar berikut.
 
 
 
-## Buat folder baru dengan nama 
+## Buat folder baru dengan nama ```lab4_layout``` , kemudian buatlah file baru didalamnya dengan nama ```home.html``` , dan file CSS dengan nama ```style.css```
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+```
+
+## Kemudian tulis kode berikut.
+
+```
+<header>
+    <h1>Layout Sederhana</h1>
+</header>
+<nav>
+    <a href="home.html" class="active">Home</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="about.html">About</a>
+    <a href="kontak.html">Kontak</a>
+</nav>
+<section id="hero"></section>
+<section id="wrapper">
+    <section id="main"></section>
+    <aside id="sidebar"></aside>
+</section>
+<footer>
+    <p>&copy; 2023 - Universitas Pelita Bangsa</p>
+</footer>
+```
+
+## Hasil Output
+
+![Screenshot (258)](https://github.com/zalfadz05/lab4web/assets/115516617/320207bf-b157-4dd4-a2cc-ae5c1d9f9513)
+
+## Kemudian tambahkan kode CSS untuk membuat layout nya.
+
+```
+/* import google font */
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height:1;
+    font-size:100%;
+    font-family:'Open Sans', sans-serif;
+    color:#5a5a5a;
+}
+#container {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #cccccc;
+}
+/* header */
+header {
+    padding: 20px;
+}
+header h1 {
+    margin: 20px 10px;
+    color: #b5b5b5;
+}
+```
+
+## Hasil Output
+
