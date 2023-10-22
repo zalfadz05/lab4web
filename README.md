@@ -105,6 +105,7 @@ float: none;
 ## Membuat Layout Sederhana
 Kita akan membuat layout web sederhana seperti gambar berikut.
 
+![Screenshot (260)](https://github.com/zalfadz05/lab4web/assets/115516617/8b590e91-0535-4e2f-821b-b718885e7383)
 
 
 ## Buat folder baru dengan nama ```lab4_layout``` , kemudian buatlah file baru didalamnya dengan nama ```home.html``` , dan file CSS dengan nama ```style.css```
