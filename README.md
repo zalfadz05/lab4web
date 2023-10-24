@@ -188,3 +188,281 @@ header h1 {
 
 ## Hasil Output
 
+![o4](https://github.com/zalfadz05/lab4web/assets/115516617/9ee285d9-4871-493b-bfdf-a2fbd7a1ddae)
+
+## Membuat Navigasi
+
+```
+/* navigasi */
+nav {
+    display: block;
+    background-color: #1f5faa;
+}
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a.active,
+nav a:hover {
+    background-color: #2b83ea;
+}
+```
+
+## Hasil Output
+
+![o5](https://github.com/zalfadz05/lab4web/assets/115516617/42d56323-f446-44e6-a558-dd067785597c)
+
+
+## Membuat Hero Panel
+
+```
+<section id="hero">
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+        elit, iaculis innisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+        vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+        pretium ac.</p>
+        <a href="home.html" class="btn btn-large">Learn more &raquo;</a>
+</section>
+```
+
+```
+/* Hero Panel */
+#hero {
+    background-color: #e4e4e5;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+    #hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+#hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+```
+
+## Hasil Output
+
+![o6](https://github.com/zalfadz05/lab4web/assets/115516617/919ffe98-3c38-4af4-99bd-b3d9e1df4a13)
+
+## Mengatur Layout Main Dan Sidebar
+Selanjutnya mengatur main content dan sidebar, tambahkan CSS float.
+```
+/* main content */
+#wrapper {
+    margin: 0;
+}
+#main {
+    float: left;
+    width: 640px;
+    padding: 20px;
+}
+```
+## Membuat Sidebar Widget
+Kemudian selanjutnya menambahkan element lain dalam sidebar.
+```
+ <aside id="sidebar"><div class="widget-box">
+        <h3 class="title">Widget Header</h3>
+        <ul>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+    </ul>
+    </div>
+    <div class="widget-box">
+        <h3 class="title">Widget Text</h3>
+        <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt
+            arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer
+            pharetra est nunc, nec pretium nunc pretium ac.</p>
+        </div>
+    </aside>
+```
+Kemudian tambahkan CSS.
+```
+/* widget */
+.widget-box {
+    border:1px solid #eee;
+    margin-bottom:20px;
+}
+.widget-box .title {
+    padding:10px 16px;
+    background-color:#428bca;
+    color:#fff;
+}
+.widget-box ul {
+    list-style-type:none;
+}
+.widget-box li {
+    border-bottom:1px solid #eee;
+}
+.widget-box li a {
+    padding:10px 16px;
+    color:#333;
+    display:block;
+    text-decoration:none;
+}
+.widget-box li:hover a {
+    background-color:#eee;
+}
+.widget-box p {
+    padding:15px;
+    line-height:25px;
+}
+```
+
+## Hasil Output
+
+![o7](https://github.com/zalfadz05/lab4web/assets/115516617/2b1f947c-3cf6-48f3-afc0-18b965a3a2c5)
+
+## Mengatur Footer
+Selanjutnya mengatur tampilan footer. Tambahkan CSS untuk footer.
+```
+/* footer */
+footer {
+    clear:both;
+    background-color:#1d1d1d;
+    padding:20px;
+    color:#eee;
+}
+```
+## Hasil Output
+
+![o8](https://github.com/zalfadz05/lab4web/assets/115516617/4c5a2cf7-1fc8-403b-8da4-bccf1d3bc691)
+
+## Menambahkan elemen lainnya pada main content.
+```
+<section id="main">
+        <div class="row">
+            <div class="box">
+                <img src="https://dummyimage.com/120/db7d25/fff.png" alt=""
+                class="image-circle">
+                <h3>Heading</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+                <a href="#" class="btn btn-default">View detail</a>
+            </div>
+            <div class="box">
+                <img src="https://dummyimage.com/120/3e73e6/fff.png" alt=""
+                class="image-circle">
+                <h3>Heading</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+                <a href="#" class="btn btn-default">View detail</a>
+            </div>
+            <div class="box">
+                <img src="https://dummyimage.com/120/71e6d4/fff.png" alt=""
+                class="image-circle">
+                <h3>Heading</h3>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+                <a href="#" class="btn btn-default">View detail</a>
+            </div>
+        </div>
+```
+
+## Kemudian tambahkan CSS
+```
+/* box */
+.box {
+    display:block;
+    float:left;
+    width:33.333333%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0 10px;
+    text-align:center;
+}
+.box h3 {
+    margin: 15px 0;
+}
+.box p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+box img {
+    border: 0;
+    vertical-align: middle;
+}
+.image-circle {
+    border-radius: 50%;
+}
+.row {
+    margin: 0 -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.row:after, .row:before,
+.entry:after, .entry:before {
+    content:'';
+    display:table;
+}
+.row:after,
+.entry:after {
+    clear:both;
+}
+```
+
+## Hasil Output
+
+![o9](https://github.com/zalfadz05/lab4web/assets/115516617/905c68a8-9e68-440f-ab43-f28f92b5f1f8)
+
+## Menambahkan Content Artikel
+
+Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content.
+
+```
+</div>
+        <hr class="divider" />
+        <article class="entry">
+            <h2>First featurette heading.</h2>
+            <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum loremelit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nuncpretium ac.</p>
+        </article>
+        <hr class="divider" />
+        <article class="entry">
+            <h2>First featurette heading.</h2>
+            <img src="https://dummyimage.com/150/7b8a70/fff.png" alt=""
+            class="right-img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum loremelit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nuncpretium ac.</p>
+        </section>
+```
+
+Kemudian tambahkan CSS.
+```
+.divider {
+    border:0;
+    border-top:1px solid #eeeeee;
+    margin:40px 0;
+}
+/* entry */
+.entry {
+    margin: 15px 0;
+}
+.entry h2 {
+    margin-bottom: 20px;
+}
+.entry p {
+    line-height: 25px;
+}
+.entry img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.entry .right-img {
+    float: right;
+}
+```
+
+## Hasil Output
+
+![Screenshot (260)](https://github.com/zalfadz05/lab4web/assets/115516617/e7dd7fd2-43f7-41af-8721-294ae6785f61)
